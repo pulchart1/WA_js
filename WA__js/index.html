@@ -5,12 +5,12 @@
     <title>Hello DOM</title>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Funkce pro změnu barvy textu v prvním odstavci
+       
        document.getElementById('myBtn').addEventListener('click', function() {
-          document.querySelector('p:first-of-type').style.color = 'red'; // Můžete změnit barvu podle potřeby
+          document.querySelector('p:first-of-type').style.color = 'red'; 
         });
 
-        // Funkce pro odebrání tučného textu z prvního odstavce
+     
         document.getElementById('myBtn2').addEventListener('click', function() {
           var firstParagraph = document.querySelector('p:first-of-type');
           var strongElement = firstParagraph.querySelector('strong');
@@ -20,14 +20,14 @@
           }
         });
 
-        // Funkce pro přidání obrázku za první odstavec
+       
         document.getElementById('myBtn3').addEventListener('click', function() {
           var img = document.createElement('img');
           img.src = 'https://fsx3.itstep.org/api/v1/files/c2WRlRlO-c0tj6BVF6LMDkBfyoT9uScQ';
           document.body.insertBefore(img, document.querySelector('p:first-of-type').nextSibling);
         });
 
-        // Funkce pro odstranění prvního odstavce
+       
         document.getElementById('myBtn4').addEventListener('click', function() {
           document.querySelector('p:first-of-type').remove();
         });
